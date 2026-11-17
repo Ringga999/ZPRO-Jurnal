@@ -1,34 +1,14 @@
-\# Roadmap Eksekusi — Sesi 02, 14 November 2026
+# Roadmap Eksekusi — Sesi 02, 14 November 2026
 
 
 
-\*\*Penulis:\*\* Ringga
+**Penulis:** Ringga
 
-\*\*Proyek:\*\* local-stratofly (Stratofly Engine)
+**Proyek:** local-stratofly (Stratofly Engine)
 
-\*\*Sifat dokumen:\*\* PANDUAN EKSEKUSI AKTIF. Berlaku besok dan beberapa hari ke depan hingga selesai.
+**Sifat dokumen:** PANDUAN EKSEKUSI AKTIF. Berlaku besok dan beberapa hari ke depan hingga selesai.
 
-\*\*Sumber:\*\* Konsolidasi 6 diskusi hari ini + backlog yang menumpuk + 100 role catalog.
-
-
-
-\---
-
-
-
-\## 🎯 Tujuan Besar
-
-
-
-1\. \*\*Sistem tim berdiri\*\* (ruleset, collaborators, batch workflow).
-
-2\. \*\*100 role ter-author\*\* (US #1-50, TEAM #51-100).
-
-3\. \*\*Kapabilitas core\*\* (clock, browsing, persona unification).
-
-4\. \*\*Demo hackathon siap\*\* (UI polish, build-share, submission pack).
-
-5\. \*\*Bukti nilai kustom\*\* (georesearch pack, simulation studio, asset-mgmt design).
+**Sumber:** Konsolidasi 6 diskusi hari ini + backlog yang menumpuk + 100 role catalog.
 
 
 
@@ -36,17 +16,37 @@
 
 
 
-\## 📊 Master Backlog (ID, Owner, Effort, Dependency, Status)
+## 🎯 Tujuan Besar
 
 
 
-\### Phase 0 — Gerbang \& Housekeeping (segera)
+1. **Sistem tim berdiri** (ruleset, collaborators, batch workflow).
+
+2. **100 role ter-author** (US #1-50, TEAM #51-100).
+
+3. **Kapabilitas core** (clock, browsing, persona unification).
+
+4. **Demo hackathon siap** (UI polish, build-share, submission pack).
+
+5. **Bukti nilai kustom** (georesearch pack, simulation studio, asset-mgmt design).
+
+
+
+\---
+
+
+
+## 📊 Master Backlog (ID, Owner, Effort, Dependency, Status)
+
+
+
+### Phase 0 — Gerbang & Housekeeping (segera)
 
 | ID | Item | Owner | Effort | Dep | Status |
 
 |---|---|---|---|---|---|
 
-| M01 | Create ruleset protect-main (Active, bypass Ringga999, target default branch, PR required, approvals=1, code owners, dismiss stale, block force push) | ADMIN | S | - | \*\*pending\*\* |
+| M01 | Create ruleset protect-main (Active, bypass Ringga999, target default branch, PR required, approvals=1, code owners, dismiss stale, block force push) | ADMIN | S | - | **pending** |
 
 | M02 | Add collaborators (Write) via Settings → Collaborators → Add people; tim accept undangan | ADMIN+TEAM | S | M01 | pending |
 
@@ -56,7 +56,7 @@
 
 | M05 | Publish release v0.1.0 dari tag (draft → publish) | ADMIN | S | - | pending |
 
-| M06 | chain\_relay ABI getAnchor → 3 outputs (accuracy fix, tidak menggigit tapi tidak akurat) | US | S | - | pending |
+| M06 | chain_relay ABI getAnchor → 3 outputs (accuracy fix, tidak menggigit tapi tidak akurat) | US | S | - | pending |
 
 | M07 | role-dropdown-rewire: wizard.py + UI baca /api/roles (hapus hardcoded 7) | US | M | - | pending |
 
@@ -64,23 +64,23 @@
 
 
 
-\### Phase 1 — Kapabilitas Core
+### Phase 1 — Kapabilitas Core
 
 | ID | Item | Owner | Effort | Dep | Status |
 
 |---|---|---|---|---|---|
 
-| M09 | Clock injection: suntik CURRENT TIME (ISO + timezone) ke system prompt via role\_registry | US | S | - | \*\*design-ready\*\* (anchor di tangan) |
+| M09 | Clock injection: suntik CURRENT TIME (ISO + timezone) ke system prompt via role_registry | US | S | - | **design-ready** (anchor di tangan) |
 
 | M10 | Browsing tool: /api/browse + SSRF guard (blokir localhost/IP privat) + timeout + rate-limit + privilege gate per-agen | US | M | M09 | design |
 
-| M11 | Persona fallback + role-consolidation: unifikasi 3 rumah persona (agents/personas/\*.md, lib/persona.py, roles/\*.json) + fallback anggun | US | M | - | design |
+| M11 | Persona fallback + role-consolidation: unifikasi 3 rumah persona (agents/personas/*.md, lib/persona.py, roles/*.json) + fallback anggun | US | M | - | design |
 
-| M12 | telegram\_listener inbound: handler /start, draft approval (polling atau webhook) | US | M | - | design (catatan: jaringan lokal blokir Bot API) |
+| M12 | telegram_listener inbound: handler /start, draft approval (polling atau webhook) | US | M | - | design (catatan: jaringan lokal blokir Bot API) |
 
 
 
-\### Phase 2 — Authoring 100 Role (Paralel)
+### Phase 2 — Authoring 100 Role (Paralel)
 
 | ID | Item | Owner | Effort | Dep | Status |
 
@@ -94,7 +94,7 @@
 
 
 
-\### Phase 3 — Demo / Hackathon
+### Phase 3 — Demo / Hackathon
 
 | ID | Item | Owner | Effort | Dep | Status |
 
@@ -110,7 +110,7 @@
 
 
 
-\### Phase 4 — Pack \& Simulasi (Custom Proof)
+### Phase 4 — Pack & Simulasi (Custom Proof)
 
 | ID | Item | Owner | Effort | Dep | Status |
 
@@ -124,7 +124,7 @@
 
 
 
-\### Phase 5 — Trust / Team Platform
+### Phase 5 — Trust / Team Platform
 
 | ID | Item | Owner | Effort | Dep | Status |
 
@@ -138,7 +138,7 @@
 
 
 
-\### Recurring
+### Recurring
 
 \- Jurnal harian di ZPRO-jurnal (runbook style).
 
@@ -150,7 +150,7 @@
 
 
 
-\## 🔗 Dependency Graph
+## 🔗 Dependency Graph
 
 
 
@@ -178,41 +178,41 @@ M23 → M24 (directive board → auth)
 
 
 
-\## 📋 Eksekusi 50 Role US (#1-50) — Batch U1-U10
+## 📋 Eksekusi 50 Role US (#1-50) — Batch U1-U10
 
 
 
-\*\*Prinsip:\*\* 10 seed (#1-7, 21, 41, 42) sudah ada → \*\*perluas modulnya\*\* (tambah modul planned → done). 40 sisanya = buat baru (roles/<nama>.json + persona + sel blueprint).
+**Prinsip:** 10 seed (#1-7, 21, 41, 42) sudah ada → **perluas modulnya** (tambah modul planned → done). 40 sisanya = buat baru (roles/<nama>.json + persona + sel blueprint).
 
 
 
-\### U1: #1-5 (seed: 1-5)
-
-| # | Role | Status | Aksi |
-
-|---|---|---|---|
-
-| 1 | Solver | seed | Perluas modul: upload, simulation, draft\_queue (planned → done) |
-
-| 2 | Architect | seed | Tambah modul: audit\_viewer, dependency\_graph, redesign\_editor |
-
-| 3 | Crafter | seed | Tambah modul: spec\_input, code\_diff, test\_runner, pr\_creator |
-
-| 4 | Analyst | seed | ✅ report\_gen done; tambah research\_input, source\_list, trend\_chart |
-
-| 5 | Communicator | seed | Tambah modul: platform\_selector, tone\_selector, draft\_composer, approval\_queue, mention\_monitor |
-
-
-
-\### U2: #6-10 (seed: 6-7)
+### U1: #1-5 (seed: 1-5)
 
 | # | Role | Status | Aksi |
 
 |---|---|---|---|
 
-| 6 | Sentinel | seed | Tambah modul: scope\_selector, cve\_dashboard, breaking\_flags, compliance\_checklist |
+| 1 | Solver | seed | Perluas modul: upload, simulation, draft_queue (planned → done) |
 
-| 7 | Operator | seed | Tambah modul: routine\_list, handoff\_timeline, pipeline\_health, ops\_summary, alert\_log |
+| 2 | Architect | seed | Tambah modul: audit_viewer, dependency_graph, redesign_editor |
+
+| 3 | Crafter | seed | Tambah modul: spec_input, code_diff, test_runner, pr_creator |
+
+| 4 | Analyst | seed | ✅ report_gen done; tambah research_input, source_list, trend_chart |
+
+| 5 | Communicator | seed | Tambah modul: platform_selector, tone_selector, draft_composer, approval_queue, mention_monitor |
+
+
+
+### U2: #6-10 (seed: 6-7)
+
+| # | Role | Status | Aksi |
+
+|---|---|---|---|
+
+| 6 | Sentinel | seed | Tambah modul: scope_selector, cve_dashboard, breaking_flags, compliance_checklist |
+
+| 7 | Operator | seed | Tambah modul: routine_list, handoff_timeline, pipeline_health, ops_summary, alert_log |
 
 | 8 | Dispatcher | baru | Buat: routing tugas, load balancing |
 
@@ -222,7 +222,7 @@ M23 → M24 (directive board → auth)
 
 
 
-\### U3: #11-15 (semua baru)
+### U3: #11-15 (semua baru)
 
 | # | Role | Aksi |
 
@@ -240,7 +240,7 @@ M23 → M24 (directive board → auth)
 
 
 
-\### U4: #16-20 (semua baru)
+### U4: #16-20 (semua baru)
 
 | # | Role | Aksi |
 
@@ -258,13 +258,13 @@ M23 → M24 (directive board → auth)
 
 
 
-\### U5: #21-25 (seed: 21)
+### U5: #21-25 (seed: 21)
 
 | # | Role | Status | Aksi |
 
 |---|---|---|---|
 
-| 21 | DataScientist | seed | ✅ report\_gen done; tambah dataset\_input, notebook\_runner, chart\_gallery, model\_card |
+| 21 | DataScientist | seed | ✅ report_gen done; tambah dataset_input, notebook_runner, chart_gallery, model_card |
 
 | 22 | DataEngineer | baru | Pipelines, ETL, quality |
 
@@ -276,7 +276,7 @@ M23 → M24 (directive board → auth)
 
 
 
-\### U6: #26-30 (semua baru)
+### U6: #26-30 (semua baru)
 
 | # | Role | Aksi |
 
@@ -294,7 +294,7 @@ M23 → M24 (directive board → auth)
 
 
 
-\### U7: #31-35 (semua baru)
+### U7: #31-35 (semua baru)
 
 | # | Role | Aksi |
 
@@ -312,7 +312,7 @@ M23 → M24 (directive board → auth)
 
 
 
-\### U8: #36-40 (semua baru)
+### U8: #36-40 (semua baru)
 
 | # | Role | Aksi |
 
@@ -330,15 +330,15 @@ M23 → M24 (directive board → auth)
 
 
 
-\### U9: #41-45 (seed: 41-42)
+### U9: #41-45 (seed: 41-42)
 
 | # | Role | Status | Aksi |
 
 |---|---|---|---|
 
-| 41 | VideoEditor | seed | Tambah modul: script\_editor, shot\_list, render\_queue, asset\_library, publish\_approval |
+| 41 | VideoEditor | seed | Tambah modul: script_editor, shot_list, render_queue, asset_library, publish_approval |
 
-| 42 | SocialMedia | seed | Tambah modul: platform\_selector, tone\_selector, draft\_composer, approval\_queue, schedule\_calendar |
+| 42 | SocialMedia | seed | Tambah modul: platform_selector, tone_selector, draft_composer, approval_queue, schedule_calendar |
 
 | 43 | Copywriter | baru | Persuasive copy, brand voice |
 
@@ -348,7 +348,7 @@ M23 → M24 (directive board → auth)
 
 
 
-\### U10: #46-50 (semua baru)
+### U10: #46-50 (semua baru)
 
 | # | Role | Aksi |
 
@@ -370,87 +370,71 @@ M23 → M24 (directive board → auth)
 
 
 
-\## 📋 Eksekusi 50 Role TEAM (#51-100) — Batch B1-B10
+## 📋 Eksekusi 50 Role TEAM (#51-100) — Batch B1-B10
 
 
 
-\*\*Prinsip:\*\* Tim garap 10 batch @5 role. Admin review per batch. Guardrail wajib untuk B1-B4 (security/finance) \& B7-B8 (simulation): field read\_only, requires\_approval, illustrative + sign-off admin.
+**Prinsip:** Tim garap 10 batch @5 role. Admin review per batch. Guardrail wajib untuk B1-B4 (security/finance) & B7-B8 (simulation): field read_only, requires_approval, illustrative + sign-off admin.
 
 
 
-\### B1: #51-55 (Security — guardrail)
+### B1: #51-55 (Security — guardrail)
 
-51\. SecurityAuditor · 52. PenTester · 53. CryptographyAdvisor · 54. PrivacyOfficer · 55. ComplianceAnalyst
-
-
-
-\### B2: #56-60 (Security — guardrail)
-
-56\. LicenseAuditor · 57. IncidentResponder · 58. ThreatModeler · 59. AccessController · 60. AuditLogger
+51. SecurityAuditor · 52. PenTester · 53. CryptographyAdvisor · 54. PrivacyOfficer · 55. ComplianceAnalyst
 
 
 
-\### B3: #61-65 (Finance — guardrail)
+### B2: #56-60 (Security — guardrail)
 
-61\. Bookkeeper · 62. BudgetAnalyst · 63. ExpenseTracker · 64. InvoiceClerk · 65. PayrollAssistant
-
-
-
-\### B4: #66-70 (Finance — guardrail)
-
-66\. TaxPreparer · 67. AssetRegistrar · 68. PortfolioAnalyst · 69. RiskAssessor · 70. FinanceReporter
+56. LicenseAuditor · 57. IncidentResponder · 58. ThreatModeler · 59. AccessController · 60. AuditLogger
 
 
 
-\### B5: #71-75 (Geo)
+### B3: #61-65 (Finance — guardrail)
 
-71\. GeoResearcher · 72. ClimateAnalyst · 73. WeatherForecaster · 74. GISMapper · 75. HydrologyAnalyst
-
-
-
-\### B6: #76-80 (Geo)
-
-76\. SeismologyAnalyst · 77. EcologyAnalyst · 78. AgricultureAdvisor · 79. DisasterModeler · 80. EnvironmentalReporter
+61. Bookkeeper · 62. BudgetAnalyst · 63. ExpenseTracker · 64. InvoiceClerk · 65. PayrollAssistant
 
 
 
-\### B7: #81-85 (Simulation — guardrail)
+### B4: #66-70 (Finance — guardrail)
 
-81\. PhysicsSimulator · 82. ChemistrySimulator · 83. MechanicalSimulator · 84. AerospaceSimulator · 85. CivilStructuralSimulator
-
-
-
-\### B8: #86-90 (Simulation — guardrail)
-
-86\. BiologicalSimulator · 87. EpidemiologyModeler · 88. EconomicsModeler · 89. TrafficSimulator · 90. EnergySystemsModeler
+66. TaxPreparer · 67. AssetRegistrar · 68. PortfolioAnalyst · 69. RiskAssessor · 70. FinanceReporter
 
 
 
-\### B9: #91-95 (Ops)
+### B5: #71-75 (Geo)
 
-91\. ProjectManager · 92. ProductManager · 93. ScrumMaster · 94. HRCoordinator · 95. Recruiter
-
-
-
-\### B10: #96-100 (Ops)
-
-96\. CustomerSupport · 97. SalesStrategist · 98. MarketingAnalyst · 99. SupplyChainAnalyst · 100. ExecutiveBriefer
+71. GeoResearcher · 72. ClimateAnalyst · 73. WeatherForecaster · 74. GISMapper · 75. HydrologyAnalyst
 
 
 
-\---
+### B6: #76-80 (Geo)
+
+76. SeismologyAnalyst · 77. EcologyAnalyst · 78. AgricultureAdvisor · 79. DisasterModeler · 80. EnvironmentalReporter
 
 
 
-\## 🚦 Next 3 Actions (Segera)
+### B7: #81-85 (Simulation — guardrail)
+
+81. PhysicsSimulator · 82. ChemistrySimulator · 83. MechanicalSimulator · 84. AerospaceSimulator · 85. CivilStructuralSimulator
 
 
 
-1\. \*\*Phase 0:\*\* M01 Create ruleset → M02 collaborators → M03 WA onboarding.
+### B8: #86-90 (Simulation — guardrail)
 
-2\. \*\*Housekeeping:\*\* M04 unescape → M05 release v0.1.0 → M06 ABI fix.
+86. BiologicalSimulator · 87. EpidemiologyModeler · 88. EconomicsModeler · 89. TrafficSimulator · 90. EnergySystemsModeler
 
-3\. \*\*Core:\*\* M09 clock (anchor siap) → M10 browsing design.
+
+
+### B9: #91-95 (Ops)
+
+91. ProjectManager · 92. ProductManager · 93. ScrumMaster · 94. HRCoordinator · 95. Recruiter
+
+
+
+### B10: #96-100 (Ops)
+
+96. CustomerSupport · 97. SalesStrategist · 98. MarketingAnalyst · 99. SupplyChainAnalyst · 100. ExecutiveBriefer
 
 
 
@@ -458,7 +442,23 @@ M23 → M24 (directive board → auth)
 
 
 
-\## ✅ Checklist Harian
+## 🚦 Next 3 Actions (Segera)
+
+
+
+1. **Phase 0:** M01 Create ruleset → M02 collaborators → M03 WA onboarding.
+
+2. **Housekeeping:** M04 unescape → M05 release v0.1.0 → M06 ABI fix.
+
+3. **Core:** M09 clock (anchor siap) → M10 browsing design.
+
+
+
+\---
+
+
+
+## ✅ Checklist Harian
 
 
 
@@ -478,19 +478,19 @@ M23 → M24 (directive board → auth)
 
 
 
-\## 📝 Catatan Penting
+## 📝 Catatan Penting
 
 
 
-\- \*\*Katalog = menu, devisi = komposisi user.\*\* Tidak ada preset terkunci.
+\- **Katalog = menu, devisi = komposisi user.** Tidak ada preset terkunci.
 
-\- \*\*Limit agen (max\_per\_provider/max\_total) ≠ lebar katalog.\*\* Katalog 100 = kapabilitas; agen aktif tetap dibatasi free-tier.
+\- **Limit agen (max_per_provider/max_total) ≠ lebar katalog.** Katalog 100 = kapabilitas; agen aktif tetap dibatasi free-tier.
 
-\- \*\*Guardrail wajib\*\* untuk role sensitif (security/finance/simulation).
+\- **Guardrail wajib** untuk role sensitif (security/finance/simulation).
 
-\- \*\*Copy dari raw, bukan render.\*\* Escape bersembunyi di lapisan mentah.
+\- **Copy dari raw, bukan render.** Escape bersembunyi di lapisan mentah.
 
-\- \*\*Nama penulis = Ringga\*\* (bukan Ringga Putra). Sapaan chat = Mr Visioner.
+\- **Nama penulis = Ringga** (bukan Ringga Putra). Sapaan chat = Mr Visioner.
 
 
 
@@ -498,9 +498,9 @@ M23 → M24 (directive board → auth)
 
 
 
-\*\*Dibuat:\*\* 14 November 2026, \~malam
+**Dibuat:** 14 November 2026, \~malam
 
-\*\*Status:\*\* AKTIF — berlaku besok dan beberapa hari ke depan.
+**Status:** AKTIF — berlaku besok dan beberapa hari ke depan.
 
-\*\*Mood:\*\* Terstruktur, siap eksekusi.
+**Mood:** Terstruktur, siap eksekusi.
 
